@@ -26,7 +26,7 @@ export default class CategoryList extends Component {
               active={
                 category.categoryName === this.props.currentCategory
                   ? true
-                  : false
+                  : false 
               }
               onClick={() => this.props.changeCategory(category)}
               key={category.id}
