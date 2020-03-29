@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
-
+import { Link } from "react-router-dom";
 
 export default class CartSummary extends Component {
   renderSummary() {
@@ -38,6 +38,10 @@ export default class CartSummary extends Component {
               <Badge color="secondary">{cartItem.quantity}</Badge>
             </DropdownItem>
           ))}
+          <DropdownItem divider />
+          <DropdownItem>
+            <Link to="cart">Go to card</Link>
+          </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
     );
